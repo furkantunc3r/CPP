@@ -8,7 +8,6 @@
 template <typename T>
 int easyfind(T x, int N)
 {
-    (void)N;
     typename T::iterator itr;
     if ((itr = find(x.begin(), x.end(), N)) != x.end())
         return std::distance(x.begin(), itr) + 1;
